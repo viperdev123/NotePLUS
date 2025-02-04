@@ -1,0 +1,125 @@
+.container-header{
+    width: 100vw;
+    background: #F5F5F5;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 25px 25px;
+}
+
+.container-logo{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+
+}
+
+.container-logo img{
+    width: 80px;
+    height: auto;
+}
+
+.container-logo p{
+    margin-left: 0;
+    font-size: 20px;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: 40px;
+}
+
+.profile ion-icon{
+    font-size: 30px;
+    color: #4B164C;
+}
+
+.log-out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 120px;
+    background: #4B164C;
+    color: white;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.log-out:hover{
+    background: red;
+}
+
+.log-out ion-icon{
+    color: #F8E7F6;
+    font-size: 20px;
+}
+
+.log-out p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.user-info{
+    display: flex;
+    gap: 25px;
+}
+
+.user-name , .user-email{
+    font-weight: 500;
+}
+
+/* Phones - แนวนอน */
+@media (min-width: 768px) and (max-width: 1023px) {
+   
+
+    
+}
+
+/* Phones - แนวตั้ง */
+@media (max-width: 767px) {
+	.container-logo img{
+        width: 40px;
+        margin-right: 20px;
+    }
+    .container-logo{
+        margin-left: 10px;
+    }
+    .user-name , .user-email{
+        font-size: 12px;
+    }
+    .user-info{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .log-out{
+        width: 80px;
+    }
+    .log-out ion-icon{
+        font-size: 15px;
+    }
+    .log-out p{
+        font-size: 12px;
+    }
+    .container-header{
+        height: 80px;
+    }
+}
+
+/* iPad - แนวตั้ง */
+@media (min-width: 768px) and (max-width: 1279px) and (orientation: portrait) {
+
+}
+
+/* iPad - แนวนอน */
+@media (min-width: 768px) and (max-width: 1367px) and (orientation: landscape) {
+    
+}
